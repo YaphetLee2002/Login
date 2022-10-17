@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="/brand-demo/loginServlet" id="form" method="post">
+    <div class="box">
+
+        <h2 id="loginMsg">Login</h2>
+<!--        <div id="errorMsg">${login_msg} ${register_msg}</div>-->
+        <div class="input-box">
+            <label>用户名</label>
+            <input id="username" name="username" type="text" value="${cookie.username.value}">
+        </div>
+
+        <div class="input-box">
+            <label>密码</label>
+            <input id="password" name="password" type="password" value="${cookie.password.value}">
+        </div>
+
+        <div class="remember">
+            <label>记住我</label>
+            <input id="remember" name="remember" type="checkbox" value="1">
+        </div>
+
+        <div class="btn-box">
+            <div>
+                <button type="submit">登录</button>
+                <button id="register">注册</button>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
